@@ -1,0 +1,575 @@
+                                                            /********************************************************* Start font google links***********************************************************/
+                                                            
+                                                            @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+                                                            @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+                                                            /********************************************************* End font google links***********************************************************/
+                                                            /********************************************************* Start Body proprty***********************************************************/
+                                                            
+                                                            * {
+                                                                margin: 0;
+                                                                padding: 0;
+                                                                box-sizing: border-box;
+                                                            }
+                                                            
+                                                            ;
+                                                            body {
+                                                                font-family: sans-serif;
+                                                                box-sizing: border-box;
+                                                                overflow-y: hidden;
+                                                                /* Hide vertical scrollbar */
+                                                                overflow-x: hidden;
+                                                                /* Hide horizontal scrollbar */
+                                                            }
+                                                            /********************************************************* End Body proprty***********************************************************/
+                                                            /********************************************************* Start Color   Options***********************************************************/
+                                                            
+                                                            .colorBox {
+                                                                position: fixed;
+                                                                top: 40%;
+                                                                left: 0;
+                                                                display: flex;
+                                                            }
+                                                            
+                                                            .colorTitle {
+                                                                font-family: 'Grape Nuts', cursive;
+                                                                font-size: 22px;
+                                                                color: #f8f9fa;
+                                                                text-align: center;
+                                                                margin-top: 10px;
+                                                                margin-bottom: 10px;
+                                                            }
+                                                            
+                                                            .colorOptions {
+                                                                padding: 6px;
+                                                                background-color: #A417B9;
+                                                                border: 3px solid #eeeeee;
+                                                            }
+                                                            
+                                                            .colorOptions li {
+                                                                width: 30px;
+                                                                height: 30px;
+                                                                display: inline-block;
+                                                            }
+                                                            
+                                                            .colorBox .svg-inline--fa {
+                                                                background-color: #A417B9;
+                                                                font-size: 35px !important;
+                                                                padding: 4px;
+                                                                height: fit-content !important;
+                                                                border: 3px solid #eeeeee;
+                                                                color: #f8f9fa;
+                                                            }
+                                                            /********************************************************* End Color   Options***********************************************************/
+                                                            /********************************************************* Start Loading    ***********************************************************/
+                                                            
+                                                            .center {
+                                                                height: 100vh;
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                background: #000;
+                                                            }
+                                                            
+                                                            .wave {
+                                                                width: 5px;
+                                                                height: 100px;
+                                                                background: linear-gradient(45deg, cyan, #fff);
+                                                                margin: 10px;
+                                                                animation: wave 1s linear infinite;
+                                                                border-radius: 20px;
+                                                            }
+                                                            
+                                                            .wave:nth-child(2) {
+                                                                animation-delay: 0.1s;
+                                                            }
+                                                            
+                                                            .wave:nth-child(3) {
+                                                                animation-delay: 0.2s;
+                                                            }
+                                                            
+                                                            .wave:nth-child(4) {
+                                                                animation-delay: 0.3s;
+                                                            }
+                                                            
+                                                            .wave:nth-child(5) {
+                                                                animation-delay: 0.4s;
+                                                            }
+                                                            
+                                                            .wave:nth-child(6) {
+                                                                animation-delay: 0.5s;
+                                                            }
+                                                            
+                                                            .wave:nth-child(7) {
+                                                                animation-delay: 0.6s;
+                                                            }
+                                                            
+                                                            .wave:nth-child(8) {
+                                                                animation-delay: 0.7s;
+                                                            }
+                                                            
+                                                            .wave:nth-child(9) {
+                                                                animation-delay: 0.8s;
+                                                            }
+                                                            
+                                                            .wave:nth-child(10) {
+                                                                animation-delay: 0.9s;
+                                                            }
+                                                            
+                                                            @keyframes wave {
+                                                                0% {
+                                                                    transform: scale(0);
+                                                                }
+                                                                50% {
+                                                                    transform: scale(1);
+                                                                }
+                                                                100% {
+                                                                    transform: scale(0);
+                                                                }
+                                                            }
+                                                            
+                                                            .center {
+                                                                inset: 0;
+                                                                z-index: 10101010;
+                                                            }
+                                                            /********************************************************* End Loading    ***********************************************************/
+                                                            /********************************************************* Start Top button    ***********************************************************/
+                                                            
+                                                            #btnTop {
+                                                                display: none;
+                                                                position: fixed;
+                                                                right: 30px;
+                                                                bottom: 30px;
+                                                                width: 50px;
+                                                                height: 50px;
+                                                                border-radius: 10px;
+                                                                background-color: #5f1782;
+                                                                text-decoration: none;
+                                                                text-align: center;
+                                                                cursor: pointer;
+                                                            }
+                                                            
+                                                            #btnTop::after {
+                                                                content: "\f077";
+                                                                font-family: FontAwesome;
+                                                                font-weight: normal;
+                                                                font-style: normal;
+                                                                font-size: 2em;
+                                                                line-height: 50px;
+                                                                color: #fff;
+                                                            }
+                                                            
+                                                            #btnTop:active {
+                                                                background-color: #555 !important;
+                                                            }
+                                                            /********************************************************* End Top Button    ***********************************************************/
+                                                            /********************************************************* Start nav  Sction***********************************************************/
+                                                            
+                                                            h3 a {
+                                                                text-decoration: none;
+                                                                color: #fff;
+                                                                font-weight: 700;
+                                                                font-family: "Montserrat" !important;
+                                                            }
+                                                            
+                                                            .navbar-brand img {
+                                                                width: 10rem;
+                                                            }
+                                                            
+                                                            .navActive {
+                                                                background-color: beige;
+                                                                border-radius: 20%;
+                                                            }
+                                                            
+                                                            .navbar-brand {
+                                                                color: brown !important;
+                                                                font-size: 30px !important;
+                                                                font-weight: 500 !important;
+                                                                letter-spacing: 10px;
+                                                            }
+                                                            
+                                                            ul li a {
+                                                                transition: all 0.5s linear;
+                                                                color: #fff !important;
+                                                                text-decoration: none;
+                                                                font-family: "Montserrat", sans-serif !important;
+                                                                font-weight: 600;
+                                                                margin-bottom: 15px !important;
+                                                                cursor: pointer;
+                                                                position: relative;
+                                                                padding-bottom: 10px !important;
+                                                            }
+                                                            
+                                                            ul li a:before {
+                                                                content: '';
+                                                                position: absolute;
+                                                                height: 2px;
+                                                                width: 0;
+                                                                bottom: 0;
+                                                                left: 10px;
+                                                                background-color: #fff;
+                                                                transition: width 0.35s ease-in;
+                                                            }
+                                                            
+                                                            ul li a:hover::before {
+                                                                width: 75%;
+                                                                background: rgb(140, 43, 185);
+                                                            }
+                                                            /********************************************************* End nav  Sction***********************************************************/
+                                                            /*------------------------------------------------------Start heading Section------------------------------------------------------*/
+                                                            
+                                                            #heading {
+                                                                background-image: linear-gradient(to right, #a517ba, #5f1782);
+                                                                color: #fff;
+                                                                padding-top: 100;
+                                                            }
+                                                            
+                                                            .cont-caption {
+                                                                margin-top: 142px;
+                                                                font-size: 35px;
+                                                                font-weight: 600;
+                                                            }
+                                                            
+                                                            .head-h {
+                                                                font-weight: 700;
+                                                                font-size: 30px;
+                                                                color: #ffd136;
+                                                                font-family: 'Anton', sans-serif;
+                                                                letter-spacing: 2px;
+                                                            }
+                                                            
+                                                            .head-p {
+                                                                font-size: 25px;
+                                                                font-weight: 600;
+                                                            }
+                                                            
+                                                            .image-cap {
+                                                                margin-top: 48px;
+                                                            }
+                                                            
+                                                            .image-cap img {
+                                                                width: 100%;
+                                                            }
+                                                            
+                                                            .play-btn {
+                                                                width: 45px;
+                                                                margin: 0 45px;
+                                                            }
+                                                            
+                                                            .cont-caption a {
+                                                                text-decoration: none;
+                                                                color: #fff;
+                                                                font-size: 20px;
+                                                                transition: all 0.5s;
+                                                            }
+                                                            
+                                                            .cont-caption a:hover {
+                                                                color: #d651eb !important;
+                                                            }
+                                                            
+                                                            .bottom-img {
+                                                                width: 100%;
+                                                            }
+                                                            /*------------------------------------------------------End heading Section------------------------------------------------------*/
+                                                            /*------------------------------------------------------Start Service Section------------------------------------------------------*/
+                                                            
+                                                            #service {
+                                                                padding: 80px 0;
+                                                            }
+                                                            
+                                                            .service-sec {
+                                                                width: 40%;
+                                                                padding-bottom: 2rem;
+                                                                transition: all 0.5s;
+                                                            }
+                                                            
+                                                            .service-sec:hover {
+                                                                transform: scale(1.1);
+                                                            }
+                                                            
+                                                            .service-caption:hover {
+                                                                cursor: pointer;
+                                                                transform: scale(1.1);
+                                                                color: #a12bdc;
+                                                            }
+                                                            
+                                                            .service-caption {
+                                                                transition: all 0.8s;
+                                                            }
+                                                            
+                                                            .service-caption h4 {
+                                                                font-size: 30px;
+                                                                font-weight: 500;
+                                                                margin-bottom: 15px;
+                                                                text-transform: uppercase;
+                                                            }
+                                                            
+                                                            .service-caption p {
+                                                                font-size: 16px;
+                                                                font-weight: 300;
+                                                                margin-bottom: 30px
+                                                            }
+                                                            
+                                                            .title-ser {
+                                                                margin-top: 10px;
+                                                                font-family: 'Rubik Wet Paint', cursive;
+                                                                letter-spacing: 3px;
+                                                            }
+                                                            
+                                                            .title-ser::before {
+                                                                content: '';
+                                                                height: 5px;
+                                                                width: 200px;
+                                                                background-color: #7b1798;
+                                                                margin-left: auto;
+                                                                margin-right: auto;
+                                                                transform: translateY(63px);
+                                                                display: block;
+                                                            }
+                                                            
+                                                            .title-ser::after {
+                                                                content: '';
+                                                                height: 16px;
+                                                                width: 50px;
+                                                                background-color: #7b1798;
+                                                                margin-left: auto;
+                                                                margin-bottom: 40px;
+                                                                margin-right: auto;
+                                                                transform: translateY(14px);
+                                                                display: block;
+                                                                border-radius: 5px;
+                                                            }
+                                                            
+                                                            #service .btn-primary {
+                                                                box-shadow: none;
+                                                                background-image: linear-gradient(to right, #a517ba, #5f1782);
+                                                                border-radius: 20px;
+                                                                border: none;
+                                                                padding-left: 25px;
+                                                                padding-right: 25px;
+                                                            }
+                                                            /*------------------------------------------------------End Service Section------------------------------------------------------*/
+                                                            /*------------------------------------------------------Start About-Us Section------------------------------------------------------*/
+                                                            
+                                                            #about-us {
+                                                                padding-top: 50px;
+                                                                padding-bottom: 50px;
+                                                                background-color: #f8f9fa;
+                                                            }
+                                                            
+                                                            .caption-about h2 {
+                                                                font-size: 30px;
+                                                                font-weight: 500;
+                                                                margin-bottom: 46px;
+                                                                margin-top: 5px;
+                                                            }
+                                                            
+                                                            .title-ser::before {
+                                                                content: '';
+                                                                height: 5px;
+                                                                width: 200px;
+                                                                background-color: #7b1798;
+                                                                margin-left: auto;
+                                                                margin-right: auto;
+                                                                transform: translateY(63px);
+                                                                display: block;
+                                                            }
+                                                            
+                                                            .title-ser::after {
+                                                                content: '';
+                                                                height: 16px;
+                                                                width: 50px;
+                                                                background-color: #7b1798;
+                                                                margin-left: auto;
+                                                                margin-bottom: 40px;
+                                                                margin-right: auto;
+                                                                transform: translateY(14px);
+                                                                display: block;
+                                                                border-radius: 5px;
+                                                            }
+                                                            
+                                                            .caption-about ul li {
+                                                                padding-bottom: 17px;
+                                                                list-style-type: square;
+                                                                font-size: 15px;
+                                                                font-weight: 500;
+                                                                line-height: 30px;
+                                                            }
+                                                            
+                                                            .img-about {
+                                                                width: 100%;
+                                                                margin-top: 5px;
+                                                            }
+                                                            /*------------------------------------------------------End About-Us Section------------------------------------------------------*/
+                                                            /*------------------------------------------------------End Testmonials Section------------------------------------------------------*/
+                                                            
+                                                            #testmonials {
+                                                                margin-top: 100px 0;
+                                                            }
+                                                            
+                                                            .testemonails-capt {
+                                                                margin-top: 50px;
+                                                                margin-bottom: 50px;
+                                                                margin-left: 30px;
+                                                                border-left: 4px solid #9e24d9c2;
+                                                            }
+                                                            
+                                                            .testemonails-capt img {
+                                                                height: 50%;
+                                                                border-radius: 50%;
+                                                                margin: 0 10px;
+                                                                border: 4px solid #9e24d9c2;
+                                                            }
+                                                            
+                                                            .p-test {
+                                                                display: inline-block;
+                                                            }
+                                                            
+                                                            .pTest {
+                                                                font-weight: 700;
+                                                                color: black;
+                                                            }
+                                                            /*------------------------------------------------------End Testmonials Section------------------------------------------------------*/
+                                                            /*------------------------------------------------------Start Social Media Section------------------------------------------------------*/
+                                                            
+                                                            #social {
+                                                                margin: 100px 0;
+                                                                background-color: #f8f9fa;
+                                                            }
+                                                            
+                                                            .pSocial {
+                                                                text-align: center;
+                                                                font-size: 40px;
+                                                                font-weight: 500;
+                                                                margin-bottom: 120px;
+                                                            }
+                                                            
+                                                            .socialMediaIcone img {
+                                                                width: 5%;
+                                                                transition: 0.5s;
+                                                                margin-bottom: 40px;
+                                                            }
+                                                            
+                                                            .socialMediaIcone a:hover img {
+                                                                transform: translateY(-10px)
+                                                            }
+                                                            /*------------------------------------------------------End Social Media Section------------------------------------------------------*/
+                                                            /*------------------------------------------------------Start footer Section------------------------------------------------------*/
+                                                            
+                                                            footer {
+                                                                background-image: linear-gradient(to right, #a517ba, #5f1782);
+                                                                color: #fff;
+                                                            }
+                                                            
+                                                            .footer-img {
+                                                                width: 100%;
+                                                            }
+                                                            
+                                                            .footer-logo {
+                                                                width: 45%;
+                                                                transition: all 0.5s;
+                                                                cursor: pointer;
+                                                            }
+                                                            
+                                                            .footer-logo:hover {
+                                                                transform: translateY(-10px);
+                                                            }
+                                                            
+                                                            .con-foo:hover {
+                                                                transform: translateY(-10px);
+                                                            }
+                                                            
+                                                            .con-foo {
+                                                                transition: all 0.5s;
+                                                                cursor: pointer;
+                                                            }
+                                                            
+                                                            .footer-caption {
+                                                                font-size: 20px;
+                                                                font-weight: 300;
+                                                                line-height: 35px;
+                                                                /* background-color: aquamarine */
+                                                                margin-bottom: 20px;
+                                                            }
+                                                            
+                                                            .aFooter a {
+                                                                text-decoration: none;
+                                                                color: #fff;
+                                                                font-size: 20px;
+                                                                font-weight: 300;
+                                                                line-height: 35px;
+                                                                transition: 0.4s;
+                                                            }
+                                                            
+                                                            .aFooter:hover a {
+                                                                color: grey;
+                                                            }
+                                                            
+                                                            .copy {
+                                                                color: hotpink;
+                                                                font-weight: 900;
+                                                            }
+                                                            
+                                                            svg:not(:root).svg-inline--fa {
+                                                                margin-right: 8px;
+                                                                height: 40px;
+                                                                font-size: 25px;
+                                                                border-radius: 2px;
+                                                                padding-top: 7px;
+                                                            }
+                                                            
+                                                            .btn-primary {
+                                                                border: none;
+                                                                border-radius: 2px;
+                                                                margin-top: 30px;
+                                                                background-image: linear-gradient(to right, #a517ba, #5f1782);
+                                                            }
+                                                            
+                                                            .form-control {
+                                                                border: none;
+                                                                border-radius: 2px;
+                                                                max-width: 250px;
+                                                            }
+                                                            
+                                                            .copyright p {
+                                                                text-align: center;
+                                                                padding: 30px;
+                                                                font-weight: 500;
+                                                            }
+                                                            
+                                                            hr:not([size]) {
+                                                                height: 4px;
+                                                                border-radius: 5px;
+                                                                background-color: #fff;
+                                                                margin-top: 10px !important;
+                                                            }
+                                                            /*------------------------------------------------------End footer Section------------------------------------------------------*/
+                                                            /*------------------------------------------------------Strat media quary------------------------------------------------------*/
+                                                            /* @media only screen and (max-width: 600px) {
+{
+    {
+        transform: translateY(22px);
+    }
+} */
+                                                            
+                                                            @media screen and (max-width: 600px) {
+                                                                .title-ser::after {
+                                                                    transform: translateY(21px);
+                                                                }
+                                                            }
+                                                            
+                                                            @media screen and (max-width: 600px) {
+                                                                .coptionRow {
+                                                                    text-align: center;
+                                                                }
+                                                                .form-control {
+                                                                    margin: auto;
+                                                                }
+                                                                .socialMediaIcone img {
+                                                                    width: 50px;
+                                                                }
+                                                                .captionTest {
+                                                                    /* text-align: center; */
+                                                                }
+                                                            }
+                                                            /*------------------------------------------------------End media quary------------------------------------------------------*/
+                                                            /*------------------------------------------------------End media quary------------------------------------------------------*/
